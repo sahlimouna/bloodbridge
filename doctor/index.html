@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blood Donation</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Donate Blood, Save Lives</h2>
+            <p>Your blood donation can make a difference.</p>
+            <a href="#donate-form" class="btn">Donate Now</a>
+        </section>
+        <section id="donate-form">
+            <h2>Make a Donation</h2>
+            <form action="donate.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="bloodType">Blood Type:</label>
+                <select id="bloodType" name="bloodType" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+
+                <input type="submit" value="Donate" class="btn">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Blood Donation</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

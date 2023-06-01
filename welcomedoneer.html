@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donor</title>
+    <link rel="stylesheet" type="text/css" href="stylesdnr.css">
+</head>
+<body>
+    <header>
+    
+        <a  class="logo"><span>B</span>lood<span>B</span>ridge</a>  
+    
+    </header>
+
+
+  <section class="home" id="home">
+    <div class="content">
+
+    </div>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <div class="controls">
+        <span class="video-btn red " data-src="teqn.mp4"></span>
+        <span class="video-btn" data-src="89a8368e-7275-487d-82e4-516ea5a17e9b.jpeg"></span>
+ 
+    </div>
+    <div class="video-container">
+        <video src="teqn.mp4 " id="video-slider" loop autoplay muted></video>
+        
+    </div>
+</section>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>D</span>
+            <span>o</span>
+            <span>n</span>
+         
+            <span>0</span>
+            <span>R</span>
+        </h1>
+           
+        <div class="row">
+            <div class="image">
+                <img src="bloodbridge 2.png" alt="">
+            </div>
+
+            <form action="donate.php" method="POST">
+
+                <div class="inputdiv">
+
+               <h3> Full Name:</h3>
+                <input type="text" id="fullName_donor" name="fullName_donor" placeholder="Your Name" required>
+                </div>
+
+                <div class="inputdiv">
+                <h3>Blood Type:</h3>
+                <select id="bloodGrp_donor" name="bloodGrp_donor" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+</div>
+<div class="inputdiv">
+
+               <h3>City:</h3>
+                <select id="adress_donor" name="adress_donor" required>
+                    <option value="23">Annaba</option>
+                    <option value="ob">Oum El Bouaghi</option>
+                   <option value="5">Batna</option>
+                   <option value="11">Tebessa</option>
+                   <option value="19">Stif</option>
+                                           
+                   <option value="24">Guelma</option>
+                  <option value="25">Constantine</option>
+                   <option value="36">EL taref</option>
+                    </select>
+                </select>
+</div>
+<div class="inputdiv">
+                <h3>Gender:</h3>
+                <select id="gender_donor" name="gender_donor" required>
+                                                       
+                  <option value="wommen">Female</option>
+                      <option value="Man">Male</option>
+                   </select> </div>
+                   <div class="inputdiv">
+
+                <h3>Email:</h3>
+                <input type="email" id="email_donor" name="email_donor" placeholder="Your Email" required>
+                   </div>
+                   <div class="inputdiv">
+                <h3>Phone:</h3>
+                <input type="tel" id="tel_donor" name="tel_donor" placeholder="Your Phone" required>
+                   </div>
+                   <div class="inputdiv">
+                <h3>Password:</h3>
+               <input type="text" id="password_donor" name="password_donor" required>
+</div>
+<button onclick="location.href='dashborddoneer.html'" class="btn">Sign Up</button>              
+            </form>
+
+        </section>
+
+    <footer>
+        <p>&copy; 2023 Blood bridge</p>
+        <center>
+            <h1>made with love</h1>
+        </center>
+    </footer>
+    <script src="scriptdnr.js"></script>
+</body>
+</html>

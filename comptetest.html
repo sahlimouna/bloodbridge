@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte test result</title>
+
+    <link rel="stylesheet" href="comptetest.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+<body>
+    
+  <header>
+    <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+    <center>
+    <a class="logo"><span>B</span>lood<span>B</span>ridge</a></center>
+    <nav class="navbar">
+        <div  id="menu" class="sidemen">
+         
+          <a href="blood.html" id="active"><i class="fa-solid fa-fire-flame-simple" style="color: #7e2020;"></i>    Blood Bridge</a>
+          <a href="donate.html"><i class="fa-solid fa-hand-holding-heart"  style="color: #7e2020;"></i> Donate</a>
+          <a href="dashbord.html"> <i class="fa-solid fa-heart-pulse fa-beat fa-xs" style="color: #7e2020;"> <br></i>        DashBord</a>
+          
+           <a href="mydonation.html"><i class="fa-sharp fa-solid fa-book" style="color: #7e2020;"></i>  My donation</a>
+             <a href="contactus.html"><i class="fa-solid fa-phone" style="color: #7e2020;"></i> </i>Contact</a>
+             <a href="setting.html"><i class="fa-sharp fa-solid fa-gear" style="color: #7e2020;"></i></i>   Setting</a>
+
+               
+      </nav>
+      <div class="icon">
+          <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+      </div>
+      <form action="" class="search-form">
+          <input type="search" id="search-bar" placeholder="What you looking for...">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+</header>
+<section class="book" id="book">
+    <h1 class="heading">
+
+       Comp Test Result 
+    </h1>
+
+    <div class="row">
+
+    <form action="comptetest.php" method="POST"></form>
+
+    <div class="inputdiv">
+     <h3>Date:</h3>
+    </div>
+
+    <div class="inputdiv">
+    <input type="datetime-local" id="date" name="date" required><br>
+    </div>
+
+    <div class="inputdiv">
+    <h3>Result:</h3>
+    <select id="result" name="result" required>
+      <option value="1">Positive</option>
+      <option value="0">Negative</option>
+    </select><br></div>
+
+    <div class="inputdiv">
+    <h3>Blood Code:</h3> 
+    <input type="text" id="bloodCode" name="bloodCode" required><br>
+    </div>
+    <input type="submit" class="btnn" value=" valider">
+  
+</div>
+</section>
+</form>
+</html>
+</body></html>

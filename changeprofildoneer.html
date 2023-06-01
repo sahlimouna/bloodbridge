@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Profil</title>
+
+    <link rel="stylesheet" href="chngprfldoneer.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+<body>
+    
+  <header>
+    <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+    <a class="logo"><span>B</span>lood<span>B</span>ridge</a>
+    <nav class="navbar">
+        <div  id="menu" class="sidemen">
+         
+          <a href="blood.html" id="active"><i class="fa-solid fa-fire-flame-simple" style="color: #7e2020;"></i>    Blood Bridge</a>
+          <a href="donate.html"><i class="fa-solid fa-hand-holding-heart"  style="color: #7e2020;"></i> Donate</a>
+          <a href="dashbord.html"> <i class="fa-solid fa-heart-pulse fa-beat fa-xs" style="color: #7e2020;"> <br></i>        DashBord</a>
+          
+           <a href="mydonation.html"><i class="fa-sharp fa-solid fa-book" style="color: #7e2020;"></i>  My donation</a>
+             <a href="contactus.html"><i class="fa-solid fa-phone" style="color: #7e2020;"></i> </i>Contact</a>
+             <a href="setting.html"><i class="fa-sharp fa-solid fa-gear" style="color: #7e2020;"></i></i>   Setting</a>
+
+               
+      </nav>
+      <div class="icon">
+          <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+          <i class="fas fa-user" onclick="showform()"></i>
+      </div>
+      <form action="" class="search-form">
+          <input type="search" id="search-bar" placeholder="What you looking for...">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+</header>
+
+   <!-------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------->
+
+   
+    
+    <div class="profil-box">
+        <h1>Change Profile</h1>
+        <h2>Personal Information</h2>
+        <form action="doner.php" method="post">
+            <form>
+             <img src="img.jpg"/>
+             <input type="file"/>
+                            
+             <label class="switch">
+            <input type="checkbox" id="toggle-btn">
+            <span class="slider"></span>
+            </label>
+
+                                
+        <label for="fname"></label>
+     <input type="text" id="fname" name="fullname:" placeholder="Full Name:">
+                      
+                                     
+                                       
+    <label for="email"></label>
+    <input type="email" id="fname" name="email" placeholder="exmpl@gmail.com">
+                              
+                                       
+                                       
+    <label for="tlf"></label>
+    <input type="tel" id="fname" name="tel" placeholder="+213 000 00 00">
+                              
+                                   
+   
+               
+        <select name="format">
+          <option selected disabled> Gender:</option>
+                                                          
+        <option value="wommen">Female</option>
+            <option value="Man">Male</option>
+         </select> 
+   
+        <select name="frmat">
+        <option selected disabled> Enter  your weight:</option>
+                                                 
+        <option value="moyen">50kg-60kg</option>
+          <option value="mn">60kg-70kg</option>
+             <option value="moyen">70kg-80kg</option>
+                                                   
+             <option value="gr">80kg-90kg</option>
+             <option value="gr">+90kg</option>
+        </select>
+<br>
+
+<select name="formt">
+  <option selected disabled> City:</option>
+                    
+                    
+             <option value="23">Annaba</option>
+             <option value="ob">Oum El Bouaghi</option>
+            <option value="5">Batna</option>
+            <option value="11">Tebessa</option>
+            <option value="19">Stif</option>
+                                    
+            <option value="24">Guelma</option>
+           <option value="25">Constantine</option>
+            <option value="36">EL taref</option>
+             </select>
+                     <br><br>
+
+       <select name="format" >
+        <option selected disabled> Blood Group:</option>
+         
+           <option value="o">O+</option>
+           <option value="o">O-</option>
+           <option value="A">A+</option>
+           <option value="A">A-</option>
+           <option value="o">B+</option>
+           <option value="o">B-</option>
+           <option value="A">AB+</option>
+           <option value="A">AB-</option>
+       </select>
+      <br><br>
+                                          
+      </form>
+                                                  
+			<a href="setting.html"><input type="submit" value=" SAVE"></a>
+                      
+    </div>
+  </form>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+    <script src="chngprfldnr.js"></script>
+
+    
+</body>
+</html>

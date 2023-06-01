@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Technecien</title>
+    <link rel="stylesheet" type="text/css" href="stylesdnr.css">
+</head>
+<body>
+    <header>
+    
+        <a  class="logo"><span>B</span>lood<span>B</span>ridge</a>  
+    
+    </header>
+
+
+  <section class="home" id="home">
+    <div class="content">
+
+    </div>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <div class="controls">
+        <span class="video-btn red " data-src="teqn.mp4"></span>
+        <span class="video-btn" data-src="89a8368e-7275-487d-82e4-516ea5a17e9b.jpeg"></span>
+ 
+    </div>
+    <div class="video-container">
+        <video src="teqn.mp4 " id="video-slider" loop autoplay muted></video>
+        
+    </div>
+</section>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>L</span>
+            <span>A</span>
+            <span>B</span>
+           
+            <span>T</span>
+            <span>E</span>
+            <span>c</span>    
+            
+            <span>h</span>
+            <span>n</span>
+            <span>e</span>  
+            <span>c</span>
+            <span>i</span>
+            <span>e</span> 
+            <span>n</span>         
+        </h1>
+           
+        <div class="row">
+            <div class="image">
+                <img src="technicien.png" width="100%">
+            </div>
+
+            <form action="donate.php" method="POST">
+
+                <div class="inputdiv">
+
+               <h3>  Name:</h3>
+                <input type="text" id="fullName_labTech" name="fullName_donor" placeholder=" Name" required>
+                </div>
+
+<div class="inputdiv">
+
+               <h3>City:</h3>
+                <select id="adress_donor" name="adress_donor" required>
+                    <option value="23">Annaba</option>
+                    <option value="ob">Oum El Bouaghi</option>
+                   <option value="5">Batna</option>
+                   <option value="11">Tebessa</option>
+                   <option value="19">Stif</option>
+                                           
+                   <option value="24">Guelma</option>
+                  <option value="25">Constantine</option>
+                   <option value="36">EL taref</option>
+                    </select>
+                </select>
+</div>
+<div class="inputdiv">
+                <h3>Email:</h3>
+                <input type="email" id="email_labTech" name="email_donor" placeholder="Your Email" required>
+                   </div>
+                   <div class="inputdiv">
+                <h3>Phone:</h3>
+                <input type="tel" id="tel_labTech" name="tel_labTech" placeholder="Your Phone" required>
+                   </div>
+                   <h3>Birth Date:</h3>
+                   <select id="birthDate_labtech" name="birthDate_labtech" required>
+                    <option value="1">Female</option>
+                    <option value="2">male</option>
+                   </select>
+
+
+                   <div class="inputdiv">
+                <h3>Password:</h3>
+               <input type="text" id="password_labTech" name="password_labTech" required>
+</div>
+                <input type="submit" value="submit" class="btn">
+            </form>
+
+        </section>
+
+    <footer>
+        <p>&copy; 2023 Blood Bridge</p>
+    </footer>
+    <script src="scriptdnr.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+:root{
+    --red: rgb(223, 38, 38)
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #ecf0f1;
+}
+
+*{
+    font-family: poppins ,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    border:none ;
+    text-decoration: none;
+    transition: all .5s linear;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem 9%;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .logo span{
+    color: var(--red);
+}
+
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+header .navbar a:hover{
+    color: var(--red);
+}
+header .icon i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header .icon i:hover{
+    color: var(--red);
+}
+header .search-form{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background:#333;
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    padding: 1.5rem 2rem;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .search-form.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .search-form #search-bar{
+    width: 100%;
+    padding: 1rem;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+header .search-form label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+header .search-form label:hover{
+    color: var(--red);
+}  
+#menu-bar{
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:990px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0 , 100% 0 , 100% 0 , 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0 , 100% 0 , 100% 100% , 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+    html{
+        font-size: 50%;
+    }
+}
+
+section{
+    padding: 2rem 9%;
+}
+.container{
+
+	width: 80%;
+	background: #fff;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius: 10px;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+label {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	display: block;
+}
+
+
+
+ .container input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:rgba(0, 0, 0, 6);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 6);
+    outline: 0px;
+    background: transparent;
+
+
+}
+
+
+.container label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px ;
+    color: rgba(0, 0, 0, 6);
+    pointer-events: none;
+    transform: .5s;
+}
+.container input:focus ~label,
+.container input:valid ~label,
+.container input:focus ~label
+{
+    top: -20px;
+    left: 0;
+    color: rgb(136, 30, 30);
+    font-size: 12px;
+
+}
+
+.container select{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:rgba(0, 0, 0, 6);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 6);
+    outline: 0px;
+    background: transparent;
+
+
+}
+
+input[type="submit"] {
+	background: #008CBA;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+input[type=text],textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius:4px ;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}

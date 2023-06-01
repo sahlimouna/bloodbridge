@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Helth Cheeck up</title>
+    <link rel="stylesheet" href="htchupdnr.css">
+    
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body> 
+
+
+
+   <header>
+      <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+      <a href="" class="logo"><span>B</span>lood<span>B</span>ridge</a>
+      <nav class="navbar">
+        <div  id="menu" class="sidemen">
+          <a href="" id="active"><i class="fa-solid fa-fire-flame-simple" style="color: #7e2020;"></i>    Blood Bridge</a>
+          <a href=""><i class="fa-solid fa-hand-holding-heart"  style="color: #7e2020;"></i> Donate</a>
+          <a href=""> <i class="fa-solid fa-heart-pulse fa-beat fa-xs" style="color: #7e2020;"> <br></i>        DashBord</a>
+          
+           <a href=""><i class="fa-sharp fa-solid fa-book" style="color: #7e2020;"></i>  My donation</a>
+             <a href="contactus.html"><i class="fa-solid fa-phone" style="color: #7e2020;"></i> </i>Contact</a>
+             <a href="seting.html"><i class="fa-sharp fa-solid fa-gear" style="color: #7e2020;"></i></i>   Setting</a>
+             
+             
+      </nav>
+      <div class="icon">
+          <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+          <i class="fas fa-user" onclick="showform()"></i>
+          <i class="fas fa-cong" onclick="showform()"></i>
+      </div>
+      <form action="" class="search-form">
+          <input type="search" id="search-bar" placeholder="What you looking for...">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+  </header>
+  
+  <div class="htchup">
+  <h1>Helth Cheeck Up Form</h1>
+  <form action="welcom.php" method="post">
+  <form>
+  
+   <select name="format">
+   <option selected disabled> Enter  your weight:</option>
+    
+      <option value="moyen">50kg-60kg</option>
+      <option value="mn">60kg-70kg</option>
+      <option value="moyen">70kg-80kg</option>
+      <option value="gr">80kg-90kg</option>
+      <option value="gr">+90kg</option>
+   </select>
+  
+      
+<br><br>
+      
+
+      
+       <select name="format" >
+        <option selected disabled> Blood Group:</option>
+         
+           <option value="o">O+</option>
+           <option value="o">O-</option>
+           <option value="A">A+</option>
+           <option value="A">A-</option>
+           <option value="o">B+</option>
+           <option value="o">B-</option>
+           <option value="A">AB+</option>
+           <option value="A">AB-</option>
+       </select>
+      <br><br>
+       
+ 
+        
+      <select name="format">
+   <option selected disabled> have you don't befor:</option>
+    
+   <option value="o">YES</option>
+   <option value="o">NO</option>
+       
+   <input type="submit" value=" SAVE">
+      </select></form> </form>
+     <div>
+   
+      
+    
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+   <script src="chngprfl.js"></script>
+
+
+</body>
+
+</html>

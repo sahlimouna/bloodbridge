@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Blood</title>
+    <link rel="stylesheet" href="testlabtq.css">
+
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+<body>
+    <header>
+      <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+      <a class="logo"><span>B</span>lood<span>B</span>ridge</a>
+      <nav class="navbar">
+          <div  id="menu" class="sidemen">
+           
+            <a href="home.html" id="active"><i class="fa-solid fa-fire-flame-simple" style="color: #7e2020;"></i>    HOME</a>
+            <a href="listreq.html"><i class="fa-solid fa-hand-holding-heart"  style="color: #7e2020;"></i> Liste Requestes</a>
+            <a href="regbld.html"> <i class="fa-solid fa-heart-pulse fa-beat fa-xs" style="color: #7e2020;"> <br></i>        Register BloodBag</a>
+            
+
+               <a href="contactus.html"><i class="fa-solid fa-phone" style="color: #7e2020;"></i> </i>Contact</a>
+               <a href="setting.html"><i class="fa-sharp fa-solid fa-gear" style="color: #7e2020;"></i></i>   Setting</a>
+  
+                 
+        </nav>
+        <div class="icon">
+            <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+            <i class="fas fa-user" onclick="showform()"></i>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-bar" placeholder="What you looking for...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+  </header>
+  
+  <div class="icon">
+    <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+    <i class="fas fa-user" onclick="showform()"></i>
+</div>
+<form action="" class="search-form">
+    <input type="search" id="search-bar" placeholder="What you looking for...">
+    <label for="search-bar" class="fas fa-search"></label>
+</form>
+</header>
+
+<div class="login-form">
+<i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+<form action="">
+    <h3>login</h3>
+    <input type="email" class="box" placeholder="Enter your email">
+    <input type="password" class="box" placeholder="Enter your password">
+    <input type="submit" value="login now" class="btn">
+    <input type="checkbox" id="remember">
+    <label for="remmember"> remember me</label>
+    <p>forget password? <a href="">click here</a></p>
+    <p>don't have acount? <a href="">sign up</a></p>
+</form>
+</div>
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="testbldlabteq.js"></script>
+
+</body>
+</html>

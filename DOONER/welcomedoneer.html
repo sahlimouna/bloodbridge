@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styldnr.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+
+  <header>
+    <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+    <a class="logo"><span>B</span>lood<span>B</span>ridge</a>
+    <nav class="navbar">
+        <div  id="menu" class="sidemen">
+         
+          <a href="blood.html" id="active"><i class="fa-solid fa-fire-flame-simple" style="color: #7e2020;"></i>    Blood Bridge</a>
+          <a href="donate.html"><i class="fa-solid fa-hand-holding-heart"  style="color: #7e2020;"></i> Donate</a>
+          <a href="dashbord.html"> <i class="fa-solid fa-heart-pulse fa-beat fa-xs" style="color: #7e2020;"> <br></i>        DashBord</a>
+          
+           <a href="mydonation.html"><i class="fa-sharp fa-solid fa-book" style="color: #7e2020;"></i>  My donation</a>
+             <a href="contactus.html"><i class="fa-solid fa-phone" style="color: #7e2020;"></i> </i>Contact</a>
+             <a href="setting.html"><i class="fa-sharp fa-solid fa-gear" style="color: #7e2020;"></i></i>   Setting</a>
+
+               
+      </nav>
+    
+</header>
+    <div class="login-box">
+
+        <h1>welcome Back</h1>
+        <h2>Login</h2>
+        <div class="image">
+            <img src="bloodbridge.png" alt="">
+        </div>
+		<form action="welcom.php" method="post">
+
+			<label for="username"> </label>
+			<input type="text" id="username" name="username" placeholder="username ">
+
+			<label for="password"> </label>
+			<input type="password"  class="input_field"  id="password" name="password" placeholder="password ">
+            <span class="input_icon-wrapper">
+                <i class="fa-regular fa-eye-slash"></i>
+              </span>
+            <p>forget password? <a href="forget.html">click here</a></p><br>
+			<input type="submit" value=" Log In"> <br><br>
+            <p>don't have acount? <a href="personal.html">sign up</a></p>
+		</form>
+	</div>
+
+    <script src="https://kit.fontawesome.com/81d73e8e4d.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+    <script src="chngprfl.js"></script>
+
+</body>
+</html>

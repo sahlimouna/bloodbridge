@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+
+}
+header h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+header button{
+
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #27ae60;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+header button:hover{
+    background-color: #2ecc71;
+}
+main {
+    padding: 20px;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+}

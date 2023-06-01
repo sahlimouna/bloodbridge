@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOCTOR</title>
+    <link rel="stylesheet" type="text/css" href="stylesdnr.css">
+</head>
+<body>
+    <header>
+    
+        <a  class="logo"><span>B</span>lood<span>B</span>ridge</a>  
+    
+    </header>
+
+
+  <section class="home" id="home">
+    <div class="content">
+
+    </div>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <div class="controls">
+        <span class="video-btn red " data-src="teqn.mp4"></span>
+        <span class="video-btn" data-src="89a8368e-7275-487d-82e4-516ea5a17e9b.jpeg"></span>
+ 
+    </div>
+    <div class="video-container">
+        <video src="teqn.mp4 " id="video-slider" loop autoplay muted></video>
+        
+    </div>
+</section>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>D</span>
+            <span>o</span>
+            <span>C</span>
+           
+            <span>T</span>
+            <span>O</span>
+            <span>R</span>         
+        </h1>
+           
+        <div class="row">
+            <div class="image">
+                <img src=" doctor.png" alt="">
+            </div>
+
+            <form action="login.php" method="POST">
+
+                <div class="inputdiv">
+
+               <h3>  Name:</h3>
+                <input type="text" id="fullName_doctor" name="fullName_doctor" placeholder=" Name" required>
+                </div>
+
+<div class="inputdiv">
+
+               <h3>City:</h3>
+                <select id="adress_donor" name="adress_donor" required>
+                    <option value="23">Annaba</option>
+                    <option value="ob">Oum El Bouaghi</option>
+                   <option value="5">Batna</option>
+                   <option value="11">Tebessa</option>
+                   <option value="19">Stif</option>
+                                           
+                   <option value="24">Guelma</option>
+                  <option value="25">Constantine</option>
+                   <option value="36">EL taref</option>
+                    </select>
+                </select>
+</div>
+<div class="inputdiv">
+                <h3>Email:</h3>
+                <input type="email" id="email_doctor" name="email_doctor" placeholder="Your Email" required>
+                   </div>
+                   <div class="inputdiv">
+                <h3>Phone:</h3>
+                <input type="tel" id="tel_doctor" name="tel_doctor" placeholder="Your Phone" required>
+                   </div>
+                   <div class="inputdiv">
+                <h3>Password:</h3>
+               <input type="text" id="password_doctor" name="password_doctor" required>
+</div>
+               <button onclick="location.href='.html'" class="btn"> Sign Up</button>
+            </form>
+
+        </section>
+
+    <footer>
+        <p>&copy; 2023 Blood Bridge</p>
+    </footer>
+    <script src="scriptdnr.js"></script>
+</body>
+</html>

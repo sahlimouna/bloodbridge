@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="appntmn.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="fontawesome/css/all.css">
+
+   
+  </head>
+  <body>
+
+  
+    
+   <header>
+    <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+    <a class="logo"><span>B</span>lood<span>B</span>ridge</a>
+    <nav class="navbar">
+      <div  id="menu" class="sidemen">
+      <a href="blood.html" id="active"><i class="fa-solid fa-fire-flame-simple" style="color: #7e2020;"></i>    Blood Bridge</a>
+      
+      <a href="dashbord.html"> <i class="fa-solid fa-heart-pulse fa-beat fa-xs" style="color: #7e2020;"> <br></i>        DashBord</a>
+        
+      <a href="mydonation.html"><i class="fa-sharp fa-solid fa-book" style="color: #7e2020;"></i>  My donation</a>
+      <a href="contactus.html"><i class="fa-solid fa-phone" style="color: #7e2020;"></i> </i>Contact</a>
+      <a href="setting.html"><i class="fa-sharp fa-solid fa-gear" style="color: #7e2020;"></i></i>   Setting</a>
+       
+    </nav>
+    <div class="icon">
+    <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+    <i class="fas fa-user" onclick="showform()"></i>
+    <i class="fas fa-cong"></i>
+    <i></i>
+    </div>
+    <form action="" class="search-form">
+        <input type="search" id="search-bar" placeholder="What you looking for...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+   </header>
+
+  <section class="home" id="home">
+    <div class="content">
+
+    </div>
+   
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>A</span>
+            <span>P</span>
+            <span>P</span>
+           
+            <span>O</span>
+            <span>i</span>
+            <span>N</span>         
+            <span>T</span>
+            <span>M</span>
+            <span>E</span> 
+             <span>N</span>         
+            <span>T</span>
+        </h1>
+           
+        <div class="row">
+
+            <form id="appointmentForm" action="process.php" method="post">
+                <label for="date">Date:</label>
+                <input type="datetime-local" id="date" name="date" required><br><br>
+            
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea><br><br>
+            
+               
+                <input type="submit" value="Submit">
+              </form>
+            
+
+    <footer>
+        <p>&copy; 2023 Blood Bridge</p>
+    </footer>
+    <script src="scriptdnr.js"></script>
+</body>
+</html>

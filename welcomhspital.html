@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOSPITAL</title>
+    <link rel="stylesheet" type="text/css" href="stylesdnr.css">
+</head>
+<body>
+    <header>
+    
+        <a  class="logo"><span>B</span>lood<span>B</span>ridge</a>  
+    
+    </header>
+
+
+  <section class="home" id="home">
+    <div class="content">
+
+    </div>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <div class="controls">
+        <span class="video-btn red " data-src="teqn.mp4"></span>
+        <span class="video-btn" data-src="89a8368e-7275-487d-82e4-516ea5a17e9b.jpeg"></span>
+ 
+    </div>
+    <div class="video-container">
+        <video src="teqn.mp4 " id="video-slider" loop autoplay muted></video>
+        
+    </div>
+</section>
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>h</span>
+            <span>o</span>
+            <span>s</span>
+           
+            <span>p</span>
+            <span>i</span>
+            <span>t</span>         
+            <span>a</span><span>L</span>
+        </h1>
+           
+        <div class="row">
+            <div class="image">
+                <img src="Capture d’écran 2023-05-27 à 11.07.11.png" alt="">
+            </div>
+
+            <form action="donate.php" method="POST">
+
+                <div class="inputdiv">
+
+               <h3>  Name:</h3>
+                <input type="text" id="name_hospital" name="name_hospital" placeholder=" Name" required>
+                </div>
+
+<div class="inputdiv">
+
+               <h3>City:</h3>
+                <select id="adress_hospital" name="adress_hospital" required>
+                    <option value="23">Annaba</option>
+                    <option value="ob">Oum El Bouaghi</option>
+                   <option value="5">Batna</option>
+                   <option value="11">Tebessa</option>
+                   <option value="19">Stif</option>
+                                           
+                   <option value="24">Guelma</option>
+                  <option value="25">Constantine</option>
+                   <option value="36">EL taref</option>
+                    </select>
+               
+</div>
+<div class="inputdiv">
+                <h3>Gender:</h3>
+                <select id="type_hospital" name="type_hospital" required>
+                                                       
+                  <option value="1">prive</option>
+                      <option value="2">public</option>
+                   </select> </div>
+<div class="inputdiv">
+                <h3>Email:</h3>
+                <input type="email" id="email_hospital" name="email_hospital" placeholder="Your Email" required>
+                   </div>
+                   <div class="inputdiv">
+                <h3>Password:</h3>
+               <input type="text" id="password_hospital" name="password_hospital" required>
+</div>
+                <input type="submit" value="submit" class="btn">
+            </form>
+
+        </section>
+
+    <footer>
+        <p>&copy; 2023 Blood Bridge</p>
+    </footer>
+    <script src="scriptdnr.js"></script>
+</body>
+</html>

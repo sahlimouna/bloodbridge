@@ -1,0 +1,118 @@
+:root{
+    --red: rgb(223, 38, 38)
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #ecf0f1;
+}
+
+*{
+    font-family: poppins ,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    border:none ;
+    text-decoration: none;
+    transition: all .5s linear;
+}
+
+.login-box {
+    display: grid;
+
+
+    
+	grid-template-columns:  repeat(2, 1fr); 
+	grid-template-rows: repeat(1fr) ;
+    margin: 3%;
+	width: 80%;
+	background: #fff;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius: 10px;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem 9%;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .logo span{
+    color: var(--red);
+}
+
+
+
+.login-box h1{
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(136, 30, 30);
+    text-align: center;
+    text-transform: none;
+}
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: gba(0, 0, 0, 6);
+    text-align: center;
+}
+label {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 4px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"] {
+	background: #008CBA;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+    width: 100%;
+}
+
+a {
+	color: #999;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+
+.login-box  .image{
+    flex: 1 1 40rem ;
+}
+.login-box  image img{
+    width: 100%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resultat</title>
+
+    <link rel="stylesheet" href="req.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+<body>
+    
+  <header>
+    <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+    <a class="logo"><span>B</span>lood<span>B</span>ridge</a>
+    <nav class="navbar">
+        <div  id="menu" class="sidemen">
+         
+          <a href="bloodbag.html" id="active"><i class="fa-solid fa-fire-flame-simple" style="color: #7e2020;"></i>    Blood Bridge</a>
+         
+           <a href="result.html"><i class="fa-sharp fa-solid fa-book" style="color: #7e2020;"></i>  My donation</a>
+            <a href="contactusdoneer.html"><i class="fa-solid fa-phone" style="color: #7e2020;"></i> </i>Contact</a>
+           <a href="settingdoneer.html"><i class="fa-sharp fa-solid fa-gear" style="color: #7e2020;"></i></i>   Setting</a>
+
+               
+    </nav>
+  </header>
+  <section class="home" id="home"></section>
+<form action="request.php" method="post">
+    
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>R</span>
+            <span>E</span>
+            <span>Q</span>
+           
+            <span>U</span>
+            <span>E</span>
+            <span>S</span>    
+            
+            <span>T</span>      
+        </h1>
+           
+    <div class="row">
+    <div class="inputdiv">
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br>
+    </div>
+    <div class="inputdiv">
+        
+    <label for="bloodGroup">Blood Group:</label>
+    <input type="text" id="bloodGroup" name="bloodGroup" required><br>
+    </div>
+    <div class="inputdiv"
+    >
+    <label for="type">Type of Blood:</label>
+    <textarea id="type" name="type" required></textarea><br>
+    </div>
+    <div class="inputdiv">
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required><br>
+    </div>
+   
+    <input type="submit" value="Submit">
+
+</form>
+<footer>
+    <p>&copy; 2023 Blood Bridge</p>
+</footer>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="chngprfldnr.js"></script>
+
+</body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Donation</title>
+
+    <link rel="stylesheet" href="rgstdntdnr.css">
+
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+    
+  <header>
+    <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+    <a href="" class="logo"><span>B</span>lood<span>B</span>ridge</a>
+    <nav class="navbar">
+        <div  id="menu" class="sidemen">
+         
+          <a href="" id="active"><i class="fa-solid fa-fire-flame-simple" style="color: #7e2020;"></i>    Blood Bridge</a>
+          <a href=""><i class="fa-solid fa-hand-holding-heart"  style="color: #7e2020;"></i> Donate</a>
+          <a href=""> <i class="fa-solid fa-heart-pulse fa-beat fa-xs" style="color: #7e2020;"> <br></i>        DashBord</a>
+          
+           <a href=""><i class="fa-sharp fa-solid fa-book" style="color: #7e2020;"></i>  My donation</a>
+             <a href="contactus.html"><i class="fa-solid fa-phone" style="color: #7e2020;"></i> </i>Contact</a>
+             <a href="seting.html"><i class="fa-sharp fa-solid fa-gear" style="color: #7e2020;"></i></i>   Setting</a>
+
+               
+      </nav>
+      <div class="icon">
+          <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
+          <i class="fas fa-user" onclick="showform()"></i>
+      </div>
+      <form action="" class="search-form">
+          <input type="search" id="search-bar" placeholder="What you looking for...">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+</header>
+
+
+
+<div class="rgstdnt">
+    <h1><p>Register Donation</p></h1>
+
+             <h2>Please File This Question</h2>
+      <form>
+             <input type="name" placeholder="Full Name:">
+             
+                 <input type="tel" placeholder="Phone Number">
+               
+                
+              
+                
+                    <select name="format">
+
+                     <option selected disable  > Gender</option>
+                   
+                     <option value="wommen">Female</option>
+                     <option value="Man">Male</option>
+                     </select>
+                     
+                     <select name="format">
+                      <option selected disabled> Blood Group</option>
+                       
+                         <option value="o">O+</option>
+                         <option value="o">O-</option>
+                         <option value="A">A+</option>
+                         <option value="A">A-</option>
+                         <option value="o">B+</option>
+                         <option value="o">B-</option>
+                         <option value="A">AB+</option>
+                         <option value="A">AB-</option>
+                     </select>
+                     
+                     <select name="format" >
+                         <label for="City" >City: </label> 
+
+                          <option selected disabled> City</option>
+                        
+                           <option value="23">Annaba</option>
+                           <option value="ob">
+                             Oum El Bouaghi</option>
+                           <option value="5">Batna</option>
+                           <option value="11">Tebessa</option>
+                           <option value="19"> Stif</option>
+                           
+                           <option value="24">Guelma</option>
+                           <option value="25">COnstantine</option>
+                           <option value="36">El taref</option>
+                           </select>
+                           <select name="format">
+                             <option selected disabled>  Donaion Type!: </option>
+                             <option value="dnt vo">Donate Voluntary</option>
+                             <option value="dnt cmp">Donate compensation</option>
+                             </select><div class="user-box">
+                                
+                                <input type="date" >
+                                <label>Birth Date</label>
+                                
+                                
+                               </div>
+                             
+                             
+                            <a href="#">
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                             Past
+                            </a>  <a href="#">
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                             Next
+                            </a>
+      </form>
+</div>
+
+                             
+
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+<script src="chngprfldnr.js"></script>
+</body>
+</html>
